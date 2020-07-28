@@ -89,19 +89,22 @@
       console.log("correct answer")
       nextSequence();
     } else if (!rightAnswer) {
-      playSound("wrong");
+      gameOver();
       $("#level-title").text("Game Over!");
       level = 0;
 
       gamePattern = [];
-      setTimeout(function(){
+      setTimeout(function() {
         $("#level-title").text("Press A Key to Start");
         started = false;
-      }
-      , 2000);
-
+      }, 2000);
     };
+  }
 
-
-
+  function gameOver() {
+    playSound("wrong");
+    $("body").addClass("game-over");
+    setTimeout(function() {
+      $("body").removeClass("game-over");
+    }, 300)
   }

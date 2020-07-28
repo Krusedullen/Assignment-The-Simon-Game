@@ -89,6 +89,7 @@
       console.log("correct answer")
       nextSequence();
     } else if (!rightAnswer) {
+      playSound("wrong");
       $("#level-title").text("Game Over!");
       level = 0;
 

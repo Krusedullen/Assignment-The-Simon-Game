@@ -6,4 +6,4 @@ The HTML and CSS was provided by the course, and I had to write the JavaScript f
 * JavaScript
 * HTML 5
 * CSS3
-* Bootstrap 4
+
